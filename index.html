@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1861896648102481');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1861896648102481&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parveen's Ads (𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇) </title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+    background: #0c0f1a url("https://i.pinimg.com/736x/6a/90/dd/6a90dd04786af9683cd7008047f58d72.jpg") center/cover fixed;
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(12, 15, 26, 0.78);
+    z-index: 0;
+}
+
+.container {
+    max-width: 480px;
+    margin: auto;
+    padding: 20px 15px 100px; /* Increased bottom padding for curved nav */
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Header */
+.profile-box {
+    text-align: center;
+}
+
+.profile-box text {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .6);
+    object-fit: cover;
+    margin-bottom: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .4);
+}
+
+.profile-box h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+/* Section Card */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+/* Features */
+.card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.features {
+    list-style: none;
+    display: grid;
+    gap: 6px;
+}
+
+.features li {
+    font-size: .95rem;
+    opacity: .95;
+}
+
+.features li::before {
+    content: "✓";
+    color: #4caf50;
+    margin-right: 6px;
+}
+
+/* ==== UPDATED: Button with Shine Animation ==== */
+.btn {
+    display: block;
+    margin-top: 14px;
+    padding: 14px;
+    background: linear-gradient(135deg, #1fa2ff, #12d8fa, #1fa2ff);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+    text-align: center;
+    transition: .25s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .35);
+    position: relative; /* Required for shine effect positioning */
+    overflow: hidden; /* Hides shine element when outside button */
+}
+
+/* Shine effect element */
+.btn::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, .8),
+        rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    animation: shine 3s infinite linear; /* Animation */
+}
+
+/* Shine animation keyframes */
+@keyframes shine {
+    0% { left: -100px; }
+    20% { left: 100%; }
+    100% { left: 100%; }
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+/* ============================================= */
+
+/* Info text */
+.info {
+    font-size: .9rem;
+    opacity: .9;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: .85rem;
+    opacity: .85;
+}
+
+.footer a {
+    color: #6bd4ff;
+    text-decoration: none;
+}
+
+/* ==== UPDATED: Curved Bottom Navigation Bar ==== */
+.curved-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Total height */
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+/* Curved top edge using ::before pseudo-element */
+.curved-nav::before {
+    content: '';
+    position: absolute;
+    top: -30px; /* Height of the curve */
+    left: 0;
+    width: 100%;
+    height: 60px; /* Double the curve height for smooth arc */
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50% 50% 0 0; /* Creates the curved top */
+    z-index: -1; /* Places it behind the button */
+}
+
+/* Navigation button inside the curved bar */
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 50px;
+    background: linear-gradient(135deg, #1fa2ff, #12d8fa, #1fa2ff);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .35);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Apply the same shine effect to the nav button */
+.nav-btn::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, .8),
+        rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    animation: shine 3s infinite linear; /* Reuses the same animation */
+}
+
+/* ============================================= */
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Profile -->
+    <div class="profile-box">
+        <img src="Parveen Tips">
+        <h1>Parveen's Ads (𝙊𝙁𝙁𝙄𝘾𝙄𝘼𝙇)</h1>
+    </div>
+
+    <!-- Main CTA -->
+    <div class="card">
+        <h2>Meta Ads Analysis</h2>
+        <p class="info">Well Design Landing Page</p>
+        <a href="https://t.me/+WRzHT75H4U43MTI1" class="btn">Join Free Telegram Channel</a>
+    </div>
+
+    <!-- Features -->
+    <div class="card">
+        <h2>What You Get</h2>
+        <ul class="features">
+            <li>Colour Trading</li>
+            <li>Forex Trading</li>
+            <li>Stock Market Channel</li>
+            <li>Matka</li>
+        </ul>
+    </div>
+
+    <!-- Trust -->
+    <div class="card">
+        <p class="info">
+            Join For A1 Work Analysis.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Channel Owned By : <a href="https://t.me/+WRzHT75H4U43MTI1">@Ads_wala</a>
+    </div>
+
+</div>
+
+<!-- Updated: Curved Navigation Bar -->
+<div class="curved-nav">
+    <a href="https://t.me/+WRzHT75H4U43MTI1" class="nav-btn"> अभी टेलेग्राम जॉइन करे  </a>
+</div>
+
+</body>
+</html>
